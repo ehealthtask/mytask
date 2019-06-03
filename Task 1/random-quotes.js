@@ -11,6 +11,7 @@ displayRandomQuote = function (num) {
 
     }
     var rand = Math.floor(Math.random() * Object.keys(quotes).length);
+	//use the mod to get odd numbers
 	if (rand%2!==0)
     console.log(quotes[rand]);
 	}
