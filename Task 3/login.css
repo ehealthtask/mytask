@@ -7,10 +7,7 @@ body{
 	margin:0;
 	padding:0;
 }
-#login_back{
-		width:490px; height:410px;
-		background-image:url(../picture/login_form.png);
-	}
+
 #msg{
 	widows:490px; height: 20px;
 	padding: 90px 0 115px 0;
