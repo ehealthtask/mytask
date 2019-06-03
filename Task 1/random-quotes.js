@@ -11,8 +11,7 @@ displayRandomQuote = function (num) {
 
     }
     var rand = Math.floor(Math.random() * Object.keys(quotes).length);
-	if (rand%2!==0)
-    console.log(quotes[rand]);
+	    console.log(quotes[rand]);
 	}
 displayRandomQuote(num);
 </script>
