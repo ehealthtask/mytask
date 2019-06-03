@@ -1,6 +1,4 @@
-<script>
-var num;
-displayRandomQuote = function (num) {
+displayRandomQuote = function () {
     var quotes = {
         0: "All computers wait at the same speed.",
         1: "A good programmer looks both ways before crossing a one-way street.",
@@ -10,10 +8,9 @@ displayRandomQuote = function (num) {
         5: "Without requirements or design, programming is the art of adding bugs to an empty 'text' file."
 
     }
-    var rand = Math.floor(Math.random() * Object.keys(quotes).length);
-	//use the mod to get odd numbers
-	if (rand%2!==0)
-    console.log(quotes[rand]);
-	}
-displayRandomQuote(num);
-</script>
+    var rand = (Math.floor(Math.random() * (Object.keys(quotes).length / 2)) * 2) + 1;
+
+    console.log(rand + ': ' + quotes[rand]);
+}
+
+displayRandomQuote();
